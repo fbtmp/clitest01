@@ -1,5 +1,4 @@
-oclif-hello-world
-=================
+# oclif-hello-world
 
 oclif example Hello World CLI
 
@@ -10,11 +9,15 @@ oclif example Hello World CLI
 [![License](https://img.shields.io/npm/l/oclif-hello-world.svg)](https://github.com/oclif/hello-world/blob/main/package.json)
 
 <!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
+
+- [Usage](#usage)
+- [Commands](#commands)
 <!-- tocstop -->
+
 # Usage
+
 <!-- usage -->
+
 ```sh-session
 $ npm install -g clitest01
 $ clitest01 COMMAND
@@ -26,21 +29,25 @@ USAGE
   $ clitest01 COMMAND
 ...
 ```
+
 <!-- usagestop -->
+
 # Commands
+
 <!-- commands -->
-* [`clitest01 hello PERSON`](#clitest01-hello-person)
-* [`clitest01 hello world`](#clitest01-hello-world)
-* [`clitest01 help [COMMAND]`](#clitest01-help-command)
-* [`clitest01 plugins`](#clitest01-plugins)
-* [`clitest01 plugins:install PLUGIN...`](#clitest01-pluginsinstall-plugin)
-* [`clitest01 plugins:inspect PLUGIN...`](#clitest01-pluginsinspect-plugin)
-* [`clitest01 plugins:install PLUGIN...`](#clitest01-pluginsinstall-plugin-1)
-* [`clitest01 plugins:link PLUGIN`](#clitest01-pluginslink-plugin)
-* [`clitest01 plugins:uninstall PLUGIN...`](#clitest01-pluginsuninstall-plugin)
-* [`clitest01 plugins:uninstall PLUGIN...`](#clitest01-pluginsuninstall-plugin-1)
-* [`clitest01 plugins:uninstall PLUGIN...`](#clitest01-pluginsuninstall-plugin-2)
-* [`clitest01 plugins update`](#clitest01-plugins-update)
+
+- [`clitest01 hello PERSON`](#clitest01-hello-person)
+- [`clitest01 hello world`](#clitest01-hello-world)
+- [`clitest01 help [COMMAND]`](#clitest01-help-command)
+- [`clitest01 plugins`](#clitest01-plugins)
+- [`clitest01 plugins:install PLUGIN...`](#clitest01-pluginsinstall-plugin)
+- [`clitest01 plugins:inspect PLUGIN...`](#clitest01-pluginsinspect-plugin)
+- [`clitest01 plugins:install PLUGIN...`](#clitest01-pluginsinstall-plugin-1)
+- [`clitest01 plugins:link PLUGIN`](#clitest01-pluginslink-plugin)
+- [`clitest01 plugins:uninstall PLUGIN...`](#clitest01-pluginsuninstall-plugin)
+- [`clitest01 plugins:uninstall PLUGIN...`](#clitest01-pluginsuninstall-plugin-1)
+- [`clitest01 plugins:uninstall PLUGIN...`](#clitest01-pluginsuninstall-plugin-2)
+- [`clitest01 plugins update`](#clitest01-plugins-update)
 
 ## `clitest01 hello PERSON`
 
@@ -331,4 +338,5 @@ FLAGS
 DESCRIPTION
   Update installed plugins.
 ```
+
 <!-- commandsstop -->
