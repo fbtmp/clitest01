@@ -1,6 +1,13 @@
 #!/usr/bin/env node
 
 const oclif = require('@oclif/core');
+const {ConsoleCat} = require('@console-cat/sdk');
+const pkg = require('../package.json');
+
+ConsoleCat.initialize({
+  cliId: 'clitest01-a5cfb07d-aad3-4025-b9be-9a6c38784578',
+  version: pkg.version,
+});
 
 oclif
   .run()
