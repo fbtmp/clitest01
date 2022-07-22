@@ -2,20 +2,34 @@
   "name": "clitest01",
   "version": "0.0.0",
   "description": "oclif example Hello World CLI",
-  "author": "Frieder Bluemle @friederbluemle",
-  "bin": {
-    "clitest01": "./bin/run"
-  },
-  "homepage": "https://github.com/friederbluemle/hello-world",
-  "license": "MIT",
   "main": "dist/index.js",
-  "repository": "friederbluemle/hello-world",
+  "types": "dist/index.d.ts",
   "files": [
     "/bin",
     "/dist",
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
+  "bin": {
+    "clitest01": "./bin/run"
+  },
+  "scripts": {
+    "build": "shx rm -rf dist && tsc -b",
+    "lint": "eslint . --ext .ts --config .eslintrc",
+    "postpack": "shx rm -f oclif.manifest.json",
+    "posttest": "yarn lint",
+    "prepack": "yarn build && oclif manifest && oclif readme",
+    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif readme && git add README.md"
+  },
+  "repository": "friederbluemle/hello-world",
+  "keywords": [
+    "oclif"
+  ],
+  "author": "Frieder Bluemle @friederbluemle",
+  "license": "MIT",
+  "bugs": "https://github.com/friederbluemle/hello-world/issues",
+  "homepage": "https://github.com/friederbluemle/hello-world",
   "dependencies": {
     "@oclif/core": "^1",
     "@oclif/plugin-help": "^5",
@@ -38,6 +52,9 @@
     "tslib": "^2.3.1",
     "typescript": "^4.4.3"
   },
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "oclif": {
     "bin": "clitest01",
     "dirname": "clitest01",
@@ -52,22 +69,5 @@
         "description": "Say hello to the world and others"
       }
     }
-  },
-  "scripts": {
-    "build": "shx rm -rf dist && tsc -b",
-    "lint": "eslint . --ext .ts --config .eslintrc",
-    "postpack": "shx rm -f oclif.manifest.json",
-    "posttest": "yarn lint",
-    "prepack": "yarn build && oclif manifest && oclif readme",
-    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
-    "version": "oclif readme && git add README.md"
-  },
-  "engines": {
-    "node": ">=12.0.0"
-  },
-  "bugs": "https://github.com/friederbluemle/hello-world/issues",
-  "keywords": [
-    "oclif"
-  ],
-  "types": "dist/index.d.ts"
+  }
 }
