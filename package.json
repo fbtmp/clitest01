@@ -37,7 +37,7 @@
     "@console-cat/sdk": "^0.19.0",
     "@oclif/core": "^1",
     "@oclif/plugin-help": "^5",
-    "@oclif/plugin-plugins": "^2.0.1"
+    "@oclif/plugin-plugins": "^2.1.0"
   },
   "devDependencies": {
     "@oclif/test": "^2",
