@@ -1,9 +1,8 @@
-*-debug.log
-*-error.log
-/.nyc_output
-/dist
-/lib
-/package-lock.json
-/tmp
-node_modules
+.idea/
+.nyc_output/
+dist/
+node_modules/
+lib/
+npm-debug.log
 oclif.manifest.json
+yarn-error.log
