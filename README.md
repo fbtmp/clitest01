@@ -153,7 +153,7 @@ ALIASES
   $ clitest01 plugins add
 
 EXAMPLES
-  $ clitest01 plugins:install myplugin 
+  $ clitest01 plugins:install myplugin
 
   $ clitest01 plugins:install https://github.com/someuser/someplugin
 
@@ -213,7 +213,7 @@ ALIASES
   $ clitest01 plugins add
 
 EXAMPLES
-  $ clitest01 plugins:install myplugin 
+  $ clitest01 plugins:install myplugin
 
   $ clitest01 plugins:install https://github.com/someuser/someplugin
 
